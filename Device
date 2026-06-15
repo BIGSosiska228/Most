@@ -1,0 +1,5 @@
+class Device
+{
+    public:
+    virtual void ShowInfo() = 0;
+};
