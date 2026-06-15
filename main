@@ -1,0 +1,23 @@
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    Device* phone = new Phone();
+    Shop* shop1 = new Shop(phone);
+
+    shop1->Info();
+
+    cout << endl;
+
+    Device* laptop = new Laptop();
+    Shop* shop2 = new OnlineShop(laptop);
+
+    shop2->Info();
+
+    delete phone;
+    delete laptop;
+    delete shop1;
+    delete shop2;
+
+    return 0;
+}
