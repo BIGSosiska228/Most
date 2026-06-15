@@ -1,0 +1,8 @@
+class Laptop : public Device
+{
+public:
+    void ShowInfo() override
+{
+    cout << "Это ноутбук Lenovo" << endl;
+}
+};
