@@ -1,0 +1,17 @@
+class Shop
+{
+    protected:
+    Device* device;
+
+    public:
+    Shop(Device* d)
+    {
+        device = d;
+    }
+
+    virtual void Info()
+    {
+        cout << "Магазин продает устройство:" << endl;
+        device->ShowInfo();
+    }
+};
